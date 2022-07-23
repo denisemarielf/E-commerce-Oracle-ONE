@@ -1,9 +1,172 @@
 {
-    "perfil": [
-      {
-        "nombre": "Harland Lohora",
-        "email": "harland@alura.com",
-        "id": 1
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1631281637549-fb740447b4ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzM4fHxoZWFkcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 2,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1616661318204-51ededbdf7a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYxfHxoZWFkcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 3,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGVhZHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 4,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 5,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 6,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1615375834706-98afda0d534f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 7,
+      "name": "Auriculares",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1614179818511-4bb0af32e44a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "headphone"
+    },
+    {
+      "id": 8,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bm90ZWJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 9,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 10,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1575909812264-6902b55846ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 11,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 12,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1533740566848-5f7d3e04e3d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 13,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 14,
+      "name": "Notebook",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1511844941619-5eadcd3735e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg0fHxub3RlYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "notebook"
+    },
+    {
+      "id": 15,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 16,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDU3fHxjZWxsJTIwcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 17,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 18,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 19,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1559650656-5d1d361ad10e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 20,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1618680551746-83925d89838b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    },
+    {
+      "id": 21,
+      "name": "Celular",
+      "price": 60,
+      "img": "https://images.unsplash.com/photo-1511296933631-18b1a062212c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "Some description",
+      "category": "phone"
+    }
+  ]
+}
