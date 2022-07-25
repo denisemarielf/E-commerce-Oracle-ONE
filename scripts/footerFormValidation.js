@@ -3,6 +3,22 @@ const inputs = document.querySelectorAll(".footer__form__input");
 const sentMessage = document.querySelector(".footer__form__sent__message");
 const sendButton = document.querySelector(".footer__form__button");
 
+const logo = document.querySelector(".header__logo__search__bar > img")
+
+const searchPhone = document.querySelector("#search__phone")
+const searchBar = document.querySelector(".header__form")
+
+const loginButton = document.querySelector('.header__login__button')
+loginButton.addEventListener('click', () => location.href = "./login")
+
+searchPhone.addEventListener("click", () => {
+  searchBar.style.display === "none" ? searchBar.style.display = "flex" : searchBar.style.display = "none"
+})
+
+logo.addEventListener("click", () => {
+  location.href = "../index.html"
+})
+
 function areValid() {
   const areTrue = Object.values(validInputs).every((value) => value === true);
   return areTrue;

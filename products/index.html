@@ -9,24 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/index.css">
-    <script src="../scripts/products.js" defer></script>
+    <script src="../scripts/products.js" type="module" defer></script>
+    <script src="../scripts/footerFormValidation.js" type="module"></script>
+    <script src="../service/products-service.js" type="module" defer></script>
+    <script src="../scripts/searchForm.js" type="module"></script>
     <title>E-commerce</title>
 </head>
 <body>
-    <header class="header" data-page="products">
+    <header class="header">
         <span class="header__logo__search__bar">
-                <img src="../assets/images/logo.png" alt="logo">
+                <img src="../assets/images/logo.png" alt="logo">          
                 <form class="header__form" action="">
                     <input class="header__form__input" type="text" placeholder="¿Que deseas buscar?">
                     <button class="header__form__button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form> 
+                
         </span>
-
+        <button class="header__login__button">Login</button>
+        <button class="header__form__button" id="search__phone"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
     <main>
-        <button class="add__product__button">Agregar producto</button>
+        <section class="products__all">
+            <span class="products__row__top">
+                <h2>Todos los productos</h2>
+                <button class="add__product__button">Agregar producto</button>
+            </span>
+            <div class="products__container"></div>
+        </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"> 
         <section class="footer__top">
         <img src="../assets/images/logo.png" alt="logo">
             <ul class="footer__ul">
@@ -38,16 +49,21 @@
                 <li class="footer__ul__li">Anuncie aqui</li>
             </ul>
 
-        <form class="footer__form">
-            <h3>Hable con nosotros</h3>
-            <label class="footer__form__item"for="name">Nombre
-                <input class="footer__form__input" type="text" name="" id="">
-            </label>
-            <label class="footer__form__item" for="name">Escribe tu mensaje
-                <textarea class="footer__form__input" name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <button class="footer__form__button">Enviar mensaje</button>
-        </form>
+            <form class="footer__form">
+                <h3>Hable con nosotros</h3>
+                <label class="footer__form__item"for="name">Nombre
+                    <input class="footer__form__input" type="text" name="name" id="name"  >
+                    
+                </label>
+                <small class="footer__form__error__message"></small>
+                <label class="footer__form__item" for="name">Escribe tu mensaje
+                    <textarea class="footer__form__input" name="message" id="message" cols="30" rows="10" ></textarea>
+                    
+                </label>
+                <small class="footer__form__error__message"></small>
+                <button class="footer__form__button">Enviar mensaje</button>
+                <small class="footer__form__sent__message">Mensaje enviado <i class="fa-solid fa-circle-check"></i></small>
+            </form>
     </section>
     <section class="footer__bottom">
         <p>Desarrollado por Denise Fernandez</p>

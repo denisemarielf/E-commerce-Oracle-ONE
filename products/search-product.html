@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/79eae1fadf.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/index.css">
-    <script src="../service/products-service.js" type="module" defer></script>
+    <script src="../scripts/searchProduct.js" type="module" defer></script>
     <script src="../scripts/footerFormValidation.js" type="module"></script>
-    <script src="../scripts/addProductFormValidation.js" type="module"></script>
+    <script src="../service/products-service.js" type="module" defer></script>
     <script src="../scripts/searchForm.js" type="module"></script>
     <title>E-commerce</title>
 </head>
@@ -30,37 +29,14 @@
         <button class="header__form__button" id="search__phone"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
     <main>
-        <main class="main">
-            <div class="main-form">
-                <form class="add__product__form">
-                <h3>Agregar nuevo producto</h3>
-                <label class="add__product__form__item"for="name">URL de la imagen
-                    <input class="add__product__form__input" type="text" name="url" id="url">
-                </label>
-                <small class="add__product__error__message"></small>
-                <label class="add__product__form__item" for="name">Categoría
-                    <input class="add__product__form__input" type="text" name="category" id="category"></input>
-                </label>
-                <small class="add__product__error__message"></small>
-                <label class="add__product__form__item"for="name">Nombre del producto
-                    <input class="add__product__form__input" type="text" name="name" id="name">
-                </label>
-                <small class="add__product__error__message"></small>
-                <label class="add__product__form__item" for="name">Precio del producto
-                    <input class="add__product__form__input" type="text" name="price" id="price"></input>
-                </label>
-                <small class="add__product__error__message"></small>
-                <label class="add__product__form__item"for="name">Descripción del producto
-                    <textarea class="add__product__form__input" name="description" id="description" cols="30" rows="10"></textarea>
-                </label>
-                <small class="add__product__error__message"></small>
-
-                <button class="add__product__form__button">Agregar producto</button>
-                <small class="add__product__form__sent__message">Producto agregado correctamente</small>
-            </form>
-            </div>
+        <section class="products__all">
+            <span class="products__row__top">
+                <h2>Productos</h2>
+            </span>
+            <div class="products__container"></div>
+        </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"> 
         <section class="footer__top">
         <img src="../assets/images/logo.png" alt="logo">
             <ul class="footer__ul">

@@ -9,59 +9,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/index.css">
-    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/index.js" type="module" defer></script>
+    <script src="../service/products-service.js" type="module" defer></script>
+    <script src="./scripts/footerFormValidation.js" type="module"></script>
+    <script src="./scripts/searchForm.js" type="module"></script>
     <title>E-commerce</title>
 </head>
 <body>
     <header class="header">
         <span class="header__logo__search__bar">
-                <img src="./assets/images/logo.png" alt="logo">
+                <img src="./assets/images/logo.png" alt="logo">          
                 <form class="header__form" action="">
                     <input class="header__form__input" type="text" placeholder="¿Que deseas buscar?">
                     <button class="header__form__button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form> 
+                
         </span>
         <button class="header__login__button">Login</button>
+        <button class="header__form__button" id="search__phone"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
     <main class="main">
         <section class="hero">
             <h2 class="hero__title">Febrero Promocional</h2>
             <p class="hero__description">Productos seleccionados con 33% de descuento</p>
-            <button class="hero__button">Ver Consolas</button>
+            <button class="hero__button">
+                <a class="hero__button__a"href="#notebooks">Ver notebooks</a>
+            </button>
         </section>
         <section class="products">
-            <section class="products__1">
-                <h3>Star Wars</h3>
+            <section class="products__row">
+                <span class="products__row__top">
+                    <h3>Auriculares</h3>
+                    <a class="products__row__top__a" href="/products/search-product.html?q=">Ver todo
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </span>
+                
+                <div class="products__row__container" data-category="headphones"></div>
             </section>
-            <section class="products__2">
-                <h3>Consolas</h3>
+            <section class="products__row">
+                <span class="products__row__top" id="notebooks">
+                    <h3>Notebooks</h3>
+                    <a href="/products/search-product.html?q=" class="products__row__top__a" >Ver todo
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a> 
+                </span>
+                <div class="products__row__container" data-category="notebooks"></div>
             </section>
-            <section class="products__3">
-                <h3>Diversos</h3>
+            <section class="products__row">
+                <span class="products__row__top">
+                    <h3>Celulares</h3>
+                    <a href="/products/search-product.html?q=" class="products__row__top__a" >Ver todo
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </span>
+                <div class="products__row__container" data-category="phones"></div>
             </section>
         </section>
     </main>
     <footer class="footer">
         <section class="footer__top">
-        <img src="./assets/images/logo.png" alt="logo">
-            <ul class="footer__ul">
-                <li class="footer__ul__li">Quienes somos</li>
-                <li class="footer__ul__li">Politica de privacidad</li>
-                <li class="footer__ul__li">Programa de fidelidad</li>
-                <li class="footer__ul__li">Nuestras Tiendas</li>
-                <li class="footer__ul__li">Quiero ser franquiciado</li>
-                <li class="footer__ul__li">Anuncie aqui</li>
-            </ul>
+            <div class="footer__logo__ul">
+                <img src="./assets/images/logo.png" alt="logo">
+                            <ul class="footer__ul">
+                                <li class="footer__ul__li">Quienes somos</li>
+                                <li class="footer__ul__li">Politica de privacidad</li>
+                                <li class="footer__ul__li">Programa de fidelidad</li>
+                                <li class="footer__ul__li">Nuestras Tiendas</li>
+                                <li class="footer__ul__li">Quiero ser franquiciado</li>
+                                <li class="footer__ul__li">Anuncie aqui</li>
+                            </ul>
+            </div>
+        
 
         <form class="footer__form">
             <h3>Hable con nosotros</h3>
             <label class="footer__form__item"for="name">Nombre
-                <input class="footer__form__input" type="text" name="" id="">
+                <input class="footer__form__input" type="text" name="name" id="name"  >
+                
             </label>
+            <small class="footer__form__error__message"></small>
             <label class="footer__form__item" for="name">Escribe tu mensaje
-                <textarea class="footer__form__input" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="footer__form__input" name="message" id="message" cols="30" rows="10" ></textarea>
+                
             </label>
+            <small class="footer__form__error__message"></small>
             <button class="footer__form__button">Enviar mensaje</button>
+            <small class="footer__form__sent__message">Mensaje enviado <i class="fa-solid fa-circle-check"></i></small>
         </form>
     </section>
     <section class="footer__bottom">

@@ -17,12 +17,12 @@
       "category": "headphone"
     },
     {
-      "id": 3,
       "name": "Auriculares",
-      "price": 60,
-      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGVhZHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "600",
       "description": "Some description",
-      "category": "headphone"
+      "category": "headphone",
+      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGVhZHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 3
     },
     {
       "id": 4,
@@ -41,12 +41,12 @@
       "category": "headphone"
     },
     {
-      "id": 6,
       "name": "Auriculares",
-      "price": 60,
-      "img": "https://images.unsplash.com/photo-1615375834706-98afda0d534f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "77",
       "description": "Some description",
-      "category": "headphone"
+      "category": "headphone",
+      "img": "https://images.unsplash.com/photo-1615375834706-98afda0d534f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 6
     },
     {
       "id": 7,
@@ -65,12 +65,12 @@
       "category": "notebook"
     },
     {
-      "id": 9,
       "name": "Notebook",
-      "price": 60,
-      "img": "https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "80",
       "description": "Some description",
-      "category": "notebook"
+      "category": "notebook",
+      "img": "https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5vdGVib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 9
     },
     {
       "id": 10,
@@ -161,12 +161,12 @@
       "category": "phone"
     },
     {
-      "id": 21,
       "name": "Celular",
-      "price": 60,
-      "img": "https://images.unsplash.com/photo-1511296933631-18b1a062212c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "999",
       "description": "Some description",
-      "category": "phone"
+      "category": "phone",
+      "img": "https://images.unsplash.com/photo-1511296933631-18b1a062212c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGNlbGwlMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 21
     }
   ]
 }

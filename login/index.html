@@ -9,31 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/index.css">
-    <script src="../scripts/login.js" defer></script>
+    <script src="../service/products-service.js" defer></script>
+    <script src="../scripts/searchForm.js" type="module"></script>
+    <script src="../scripts/footerFormValidation.js" type="module"></script>
+    <script src="../scripts/loginFormValidation.js" type="module"></script>
     <title>Login</title>
 </head>
 <body>
-    <header class="header" data-page="login">
+    <header class="header">
         <span class="header__logo__search__bar">
-                <img src="../assets/images/logo.png" alt="logo">
+                <img src="../assets/images/logo.png" alt="logo">          
                 <form class="header__form" action="">
                     <input class="header__form__input" type="text" placeholder="¿Que deseas buscar?">
                     <button class="header__form__button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form> 
+                
         </span>
-
+        <button class="header__login__button">Login</button>
+        <button class="header__form__button" id="search__phone"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
     <main class="main">
         <div class="main-form">
             <form class="login__form">
             <h3>Iniciar sesión</h3>
             <label class="login__form__item"for="name">Correo electrónico
-                <input class="login__form__input" type="email" name="" id="">
+                <input class="login__form__input" type="email" name="email" id="email">
             </label>
+            <small class="login__form__error__message"></small>
             <label class="login__form__item" for="name">Contraseña
-                <input class="login__form__input" type="password" name="" id=""></input>
+                <input class="login__form__input" type="password" name="password" id="password"></input>
             </label>
+            <small class="login__form__error__message"></small>
             <button class="login__form__button">Entrar</button>
+            <small class="login__form__login__error__message"></small>
         </form>
         </div>
 
@@ -50,16 +58,21 @@
                 <li class="footer__ul__li">Anuncie aqui</li>
             </ul>
         
-        <form class="footer__form">
-            <h3>Hable con nosotros</h3>
-            <label class="footer__form__item"for="name">Nombre
-                <input class="footer__form__input" type="text" name="" id="">
-            </label>
-            <label class="footer__form__item" for="name">Escribe tu mensaje
-                <textarea class="footer__form__input" name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <button class="footer__form__button">Enviar mensaje</button>
-        </form>
+            <form class="footer__form">
+                <h3>Hable con nosotros</h3>
+                <label class="footer__form__item"for="name">Nombre
+                    <input class="footer__form__input" type="text" name="name" id="name"  >
+                    
+                </label>
+                <small class="footer__form__error__message"></small>
+                <label class="footer__form__item" for="name">Escribe tu mensaje
+                    <textarea class="footer__form__input" name="message" id="message" cols="30" rows="10" ></textarea>
+                    
+                </label>
+                <small class="footer__form__error__message"></small>
+                <button class="footer__form__button">Enviar mensaje</button>
+                <small class="footer__form__sent__message">Mensaje enviado <i class="fa-solid fa-circle-check"></i></small>
+            </form>
     </section>
     <section class="footer__bottom">
         <p>Desarrollado por Denise Fernandez</p>
