@@ -14,18 +14,18 @@ const createProduct = async (name, price, description, category, img) => {
 }
 
 const deleteProduct = async (id) => {
-    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`, {
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products/${id}`, {
         method: "DELETE",
     })
     
 }
 
 const productData = async (id) => {
-    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`).then(response => response.json())
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products/${id}`).then(response => response.json())
 }
 
 const editProduct = async (name, price, description, category, img, id) => {
-    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`, {
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
