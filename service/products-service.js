@@ -1,10 +1,10 @@
 const getProductList = async () => {
-    const response = await fetch("http://localhost:3000/products")
+    const response = await fetch("https://e-commerce-alura-oracle-one.herokuapp.com/products")
     return await response.json()
 }
 
 const createProduct = async (name, price, description, category, img) => {
-    return fetch("http://localhost:3000/products", {
+    return fetch("https://e-commerce-alura-oracle-one.herokuapp.com/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -14,18 +14,18 @@ const createProduct = async (name, price, description, category, img) => {
 }
 
 const deleteProduct = async (id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`, {
         method: "DELETE",
     })
     
 }
 
 const productData = async (id) => {
-    return fetch(`http://localhost:3000/products/${id}`).then(response => response.json())
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`).then(response => response.json())
 }
 
 const editProduct = async (name, price, description, category, img, id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://e-commerce-alura-oracle-one.herokuapp.com/products${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
